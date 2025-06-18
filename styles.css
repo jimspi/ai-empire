@@ -53,12 +53,6 @@ header p {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.4s ease, box-shadow 0.3s ease;
-  transform-style: preserve-3d;
-}
-
-.card:hover {
-  transform: rotateY(10deg);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
@@ -86,20 +80,39 @@ header p {
 
 .scroll-carousel {
   display: flex;
-  overflow-x: auto;
-  gap: 1.25rem;
-  padding: 1rem 0;
-  scroll-snap-type: x mandatory;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  margin: 3rem auto;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
 }
 
 .scroll-carousel .card {
   flex: 0 0 300px;
-  scroll-snap-align: start;
-  transition: transform 0.4s ease;
+  margin: 0 1rem;
+  transform-origin: center center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: absolute;
+  opacity: 0.5;
 }
 
-.scroll-carousel .card:hover {
-  transform: rotateZ(5deg) scale(1.05);
+.scroll-carousel .card.active {
+  transform: translateX(0) scale(1.2) rotateY(0deg);
+  z-index: 3;
+  opacity: 1;
+}
+
+.scroll-carousel .card.left {
+  transform: translateX(-320px) rotateY(20deg);
+  z-index: 2;
+}
+
+.scroll-carousel .card.right {
+  transform: translateX(320px) rotateY(-20deg);
+  z-index: 2;
 }
 
 footer {
@@ -110,5 +123,6 @@ footer {
   background: #f1f5f9;
   border-top: 1px solid #e5e7eb;
 }
+
 
 
