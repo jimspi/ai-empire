@@ -52,12 +52,13 @@ header p {
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transform: rotateY(10deg);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
@@ -94,6 +95,11 @@ header p {
 .scroll-carousel .card {
   flex: 0 0 300px;
   scroll-snap-align: start;
+  transition: transform 0.4s ease;
+}
+
+.scroll-carousel .card:hover {
+  transform: rotateZ(5deg) scale(1.05);
 }
 
 footer {
@@ -104,4 +110,5 @@ footer {
   background: #f1f5f9;
   border-top: 1px solid #e5e7eb;
 }
+
 
