@@ -1,76 +1,107 @@
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  background: #f7f7f7;
-  color: #111;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #f9f9f9, #fff);
+  color: #1a1a1a;
+  overflow-x: hidden;
 }
+
 header {
-  background: #111;
+  background: #111827;
   color: white;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
+  border-bottom: 4px solid #3b82f6;
 }
+
 header h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin: 0;
 }
+
 header p {
-  font-size: 1.2rem;
-  color: #aaa;
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  margin-top: 0.5rem;
 }
+
 .section {
-  max-width: 1000px;
-  margin: 3rem auto;
+  max-width: 1200px;
+  margin: 4rem auto;
   padding: 0 2rem;
 }
+
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
+  color: #1f2937;
+  border-left: 4px solid #3b82f6;
+  padding-left: 1rem;
 }
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
+
 .card {
   background: white;
-  padding: 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  transition: box-shadow 0.2s;
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
+
 .card h3 {
   margin-top: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #111827;
 }
+
 .card p {
-  color: #555;
-  font-size: 0.95rem;
+  color: #4b5563;
+  font-size: 1rem;
 }
+
 .card a {
   display: inline-block;
-  margin-top: 0.75rem;
-  color: #0070f3;
+  margin-top: 1rem;
+  color: #3b82f6;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 500;
 }
+
+.card a:hover {
+  text-decoration: underline;
+}
+
 .scroll-carousel {
   display: flex;
   overflow-x: auto;
-  gap: 1rem;
+  gap: 1.25rem;
   padding: 1rem 0;
+  scroll-snap-type: x mandatory;
 }
+
 .scroll-carousel .card {
   flex: 0 0 300px;
+  scroll-snap-align: start;
 }
+
 footer {
   text-align: center;
-  padding: 3rem 2rem;
-  font-size: 0.9rem;
-  color: #888;
+  padding: 4rem 2rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+  background: #f1f5f9;
+  border-top: 1px solid #e5e7eb;
 }
+
