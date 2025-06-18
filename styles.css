@@ -55,6 +55,11 @@ header p {
   transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 .card h3 {
   margin-top: 0;
   font-size: 1.3rem;
@@ -80,39 +85,25 @@ header p {
 
 .scroll-carousel {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 1000px;
-  margin: 3rem auto;
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-  height: 400px;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 2rem;
+  scroll-snap-type: x mandatory;
 }
 
 .scroll-carousel .card {
   flex: 0 0 300px;
-  margin: 0 1rem;
-  transform-origin: center center;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  position: absolute;
-  opacity: 0.5;
-}
-
-.scroll-carousel .card.active {
-  transform: translateX(0) scale(1.2) rotateY(0deg);
-  z-index: 3;
+  scroll-snap-align: center;
+  position: relative;
   opacity: 1;
+  transform: none;
+  z-index: 1;
 }
 
-.scroll-carousel .card.left {
-  transform: translateX(-320px) rotateY(20deg);
+.scroll-carousel .card:hover {
+  transform: translateY(-8px) scale(1.05);
   z-index: 2;
-}
-
-.scroll-carousel .card.right {
-  transform: translateX(320px) rotateY(-20deg);
-  z-index: 2;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 footer {
@@ -123,6 +114,7 @@ footer {
   background: #f1f5f9;
   border-top: 1px solid #e5e7eb;
 }
+
 
 
 
