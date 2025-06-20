@@ -3,170 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The AI Empire</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Jim Spiewak's AI HQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #1e293b, #0f172a);
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: #0f172a;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+    .section {
+      padding: 1.2rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #38bdf8;
+      padding-left: 0.75rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 1.2rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #38bdf8;
+    }
+    .card p {
+      margin: 0.5rem 0 1rem;
+      color: #cbd5e1;
+    }
+    .card a {
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: #0f172a;
+      color: #94a3b8;
+    }
+    select {
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+      background: #1e293b;
+      color: white;
+      border: 1px solid #38bdf8;
+      border-radius: 6px;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+  color: #38bdf8;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+    nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Everything I've Built with AI</h1>
-    <p>Welcome to my full stack of GPTs, tools, experiments, and apps.</p>
-  </header>
-  <main>
-     <section class="section">
-    <h2>🧠 Public GPTs</h2>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Summary Suit</h3>
-        <p>Summarizes complex documents instantly.</p>
-        <a href="https://chat.openai.com/g/g-6IjUbuJjl-summary-suit">Launch GPT</a>
-      </div>
-      <div class="card">
-        <h3>Headline Maker</h3>
-        <p>Craft click-worthy headlines on demand.</p>
-        <a href="https://chat.openai.com/g/g-oxGMUOVoX-headline-maker">Launch GPT</a>
-      </div>
-      <div class="card">
-        <h3>Fourth Grade Math Tutor</h3>
-        <p>Explains math to kids with patience.</p>
-        <a href="https://chat.openai.com/g/g-YKUefzvTo-fourth-grade-math-tutor">Launch GPT</a>
-      </div>
+<header>
+  <h1>Jim Spiewak's AI HQ</h1>
+  <p>Everything I've built with AI — in one place</p>
+</header>
+
+<section class="section">
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 1.5rem; box-shadow: 0 8px 30px rgba(0,0,0,0.3); font-size: 1rem; line-height: 1.7; max-width: 900px; margin: 0 auto 2rem;">
+    <p style="margin-bottom: 1rem;">I didn’t go to coding camp. I didn’t hire a dev team. I'm a one man company. Self taught to build all of this — every product, tool, game, and service — by leveraging AI as my creative and technical partner.</p>
+    <p style="margin-bottom: 1rem;">This isn’t just a digital resume. It’s proof that AI can empower a solo creator to operate like a full company. Now, I’m talking with businesses, selling tools, creating value, and building a personal brand — all while staying lean and moving fast.</p>
+    <p style="margin: 0;">I’m just getting started. So much more to come.</p>
+  </div>
+</section>
+
+<nav>
+  <a href="#games">Games</a>
+  <a href="#tools">Tools & Services</a>
+  <a href="#education">Education & Advocacy</a>
+  <a href="#custom-gpts">Custom GPTs</a>
+</nav>
+
+<section class="section" id="games">
+  <h2>🎮 Games</h2>
+  <div class="grid">
+    <div class="card"><h3>Zapit</h3><a href="https://zapit-sepia.vercel.app/" target="_blank">Play</a></div>
+    <div class="card"><h3>Color Catch</h3><a href="https://color-catch-67pz.vercel.app/" target="_blank">Play</a></div>
+    <div class="card"><h3>Emoji Puzzle</h3><a href="https://emojipuzzle.vercel.app/" target="_blank">Play</a></div>
+    <div class="card"><h3>Tap</h3><a href="https://tap-sable.vercel.app/" target="_blank">Play</a></div>
+    <div class="card"><h3>Clue Chain</h3><a href="https://clue-chain-gamey-1fcz.vercel.app/" target="_blank">Play</a></div>
+  </div>
+</section>
+
+<section class="section" id="tools">
+  <h2>🧰 Tools & Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Wedding Photo Sharing</h3>
+      <p>Let wedding guests privately upload and share photos.</p>
+      <a href="wedding-example-nine.vercel.app" target="_blank">Launch</a>
     </div>
-
-    <div style="margin-top: 2rem;">
-      <label for="gptSelect">More GPTs:</label>
-      <select id="gptSelect" onchange="showSelectedGpt(this)">
-        <option value="">-- Select a GPT --</option>
-      </select>
+    <div class="card">
+      <h3>AIQ</h3>
+      <p>AI-powered quiz creation & knowledge assistant.</p>
+      <a href="https://aiq-beta.vercel.app/" target="_blank">Launch</a>
     </div>
+    <div class="card">
+      <h3>BuzzRemind</h3>
+      <p>Daily reminder generator from voice conversations.</p>
+      <a href="https://buzz-remind.vercel.app/" target="_blank">Launch</a>
+    </div>
+    <div class="card">
+      <h3>AI Empire</h3>
+      <p>Showcase hub for all your AI creations and tools.</p>
+      <a href="https://ai-empire.vercel.app/" target="_blank">Launch</a>
+    </div>
+    <div class="card">
+      <h3>MACU</h3>
+      <p>Custom credit union service and simulation tool.</p>
+      <a href="https://macu-five.vercel.app/" target="_blank">Launch</a>
+    </div>
+    <div class="card">
+      <h3>AIptitude</h3>
+      <p>Gauge your AI readiness with a smart quiz & score.</p>
+      <a href="https://a-iptitude.vercel.app/" target="_blank">Launch</a>
+    </div>
+    <div class="card">
+      <h3>AI Knowledge Assessment Pro</h3>
+      <p>Advanced skill profiling and training suggestions.</p>
+      <a href="https://ai-knowledge-assessment-pro.vercel.app/" target="_blank">Launch</a>
+    </div>
+    <div class="card">
+      <h3>JournoBridge</h3>
+      <p>Helps journalists pivot careers with tailored tools.</p>
+      <a href="https://journo-bridge.vercel.app/" target="_blank">Launch</a>
+    </div>
+  </div>
+</section>
 
-    <div id="extraCard" class="card" style="display: none; margin-top: 2rem;"></div>
-  </section>
+<section class="section" id="education">
+  <h2>🎓 Education & Advocacy</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>AI Bootcamp</h3>
+      <p>Beginner-friendly AI lessons delivered by avatar videos.</p>
+      <a href="#" target="_blank">Coming Soon</a>
+    </div>
+    <div class="card">
+      <h3>Business Ally</h3>
+      <p>Custom tool for nonprofits supporting survivors of abuse.</p>
+      <a href="https://saprea.org/" target="_blank">Visit Saprea</a>
+    </div>
+    <div class="card">
+      <h3>I Love You Bro</h3>
+      <p>Tool to convert trauma stories into grant-friendly reports.</p>
+      <a href="https://www.iloveyoubroproject.org/" target="_blank">Visit Project</a>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Jim Spiewak. All rights reserved.</p>
-  </footer>
+<section class="section" id="custom-gpts">
+  <h2>🤖 Custom GPTs</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>BuzzRemind GPT</h3>
+      <p>Turn daily conversations into actionable reminders.</p>
+      <a href="https://chatgpt.com/g/g-682904753a188191b770d053b860c4f5-buzzremind" target="_blank">Open</a>
+    </div>
+    <div class="card">
+      <h3>Chartty</h3>
+      <p>Generate instant, explorable charts from data.</p>
+      <a href="https://chatgpt.com/g/g-682385f4ea38819190dfaec9a84daf85-chartty" target="_blank">Open</a>
+    </div>
+    <div class="card">
+      <h3>LinkedIn Profile Reviewer</h3>
+      <p>Get AI-powered tips to upgrade your LinkedIn presence.</p>
+      <a href="https://chatgpt.com/gpts/editor/g-682b7eacd8148191b2655906383789dd" target="_blank">Open</a>
+    </div>
+  </div>
 
-  <script>
-    const gpts = [
-      {
-        id: "summary",
-        name: "Summary Suit",
-        desc: "Summarizes complex documents instantly.",
-        link: "https://chat.openai.com/g/g-6IjUbuJjl-summary-suit"
-      },
-      {
-        id: "headline",
-        name: "Headline Maker",
-        desc: "Craft click-worthy headlines on demand.",
-        link: "https://chat.openai.com/g/g-oxGMUOVoX-headline-maker"
-      },
-      {
-        id: "math",
-        name: "Fourth Grade Math Tutor",
-        desc: "Explains math to kids with patience.",
-        link: "https://chat.openai.com/g/g-YKUefzvTo-fourth-grade-math-tutor"
-      },
-      {
-        id: "startup",
-        name: "AI Startup Disruptor",
-        desc: "Generate pitch ideas for disruptive AI startups.",
-        link: "https://chat.openai.com/g/g-E1nYHxOPd-ai-startup-disruptor"
-      },
-      {
-        id: "bill",
-        name: "Bill Explainer",
-        desc: "Breaks down legislation into plain English.",
-        link: "https://chat.openai.com/g/g-LxQnGZzSB-bill-explainer"
-      },
-      {
-        id: "script",
-        name: "Script Converter",
-        desc: "Transform scripts between formats (TV, film, news).",
-        link: "https://chat.openai.com/g/g-vbJZEPsOT-script-converter"
-      },
-      {
-        id: "vosot",
-        name: "VOSOT Generator",
-        desc: "Turns raw facts into news-ready broadcast scripts.",
-        link: "https://chat.openai.com/g/g-dCh9UyyJx-vosot-generator"
-      },
-      {
-        id: "newsfocus",
-        name: "News Focus",
-        desc: "Rapidly finds angles and pegs in complex news stories.",
-        link: "https://chat.openai.com/g/g-7MzgYrSmO-news-focus"
-      },
-      {
-        id: "trendthreader",
-        name: "Trend Threader",
-        desc: "Instantly creates compelling Twitter/X threads on news or trends.",
-        link: "https://chat.openai.com/g/g-R3S2TCA1Z-trend-threader"
-      },
-      {
-        id: "easelegalese",
-        name: "Ease Legalese",
-        desc: "Simplifies legal jargon into human speak.",
-        link: "https://chat.openai.com/g/g-iZqqDe8Oj-ease-legalese"
-      }
-    ];
+  <label for="gptDropdown">View All Custom GPTs:</label>
+  <select id="gptDropdown" onchange="if(this.value) window.open(this.value,'_blank')">
+    <option value="">Select a GPT...</option>
+    <option value="https://chatgpt.com/g/g-682cd96ea73481918299fc4a75b86631-math-buddy">Math Buddy</option>
+    <option value="https://chatgpt.com/g/g-682168a13618819184d44146e3044cd0-gameforge-puzzle-generator-coder">GameForge</option>
+    <option value="https://chatgpt.com/g/g-681ad9bc5acc8191956dda4d87f6849f-ai-skill-sharer">AI Skill Sharer</option>
+    <option value="https://chatgpt.com/g/g-68124695e39c8191b3d76a702a7b08e9-shopping-assistant">Shopping Assistant</option>
+    <option value="https://chatgpt.com/g/g-680eb2efdcac8191a8658b1bf7b53511-field-expert">Field Expert</option>
+    <option value="https://chatgpt.com/g/g-6807cbf45c848191841d2b80537d3354-prompt-perfecter">Prompt Perfecter</option>
+    <option value="https://chatgpt.com/g/g-6807c6cf9f6081918f1be0f446e6866e-nextwave">NextWave</option>
+    <option value="https://chatgpt.com/g/g-68070845b7a48191b1297ab52c28212b-futureforge">FutureForge</option>
+    <option value="https://chatgpt.com/g/g-68069bc3d3308191bd49e26c453ddd3a-2nd-grade-tutor">2nd Grade Tutor</option>
+    <option value="https://chatgpt.com/g/g-6803f99853288191a41749debbe4f268-daily-contrast">Daily Contrast</option>
+    <option value="https://chatgpt.com/g/g-6803f83e5b84819198eb89fc4397dc42-balanced-viewpoints">Balanced Viewpoints</option>
+    <option value="https://chatgpt.com/g/g-67fdad7118688191b4558f350b38c7b0-webgenie">Web Genie</option>
+    <option value="https://chatgpt.com/g/g-67fdad7118688191b4558f350b38c7b0-webgenie">AI Startup Disruptor</option>>
+    <option value="https://chatgpt.com/g/g-2rQRb0PkK-press-release-wizard">Press Release Wizard</option>
+    <option value="https://chatgpt.com/g/g-DgehhsYKw-script-converter">Script Converter</<option
+    <option value=" https://chatgpt.com/g/g-25CaW9w6x-weather-teller">Weather Teller</option>
+    <option value="https://chatgpt.com/g/g-DgehhsYKw-script-converter">Script Converter</option>
+    <option value="https://chatgpt.com/g/g-68018de0bbcc81918cf6fad498e7f5ae-promptme">PromptMe</option>
+    <option value="https://chatgpt.com/g/g-TTdE2Pyrh-language-lens">Language Lens</option>
+    <option value="https://chatgpt.com/g/g-vTjtuqhnI-vosot-generator">VOSOT Generator</option>
+    <option value="https://chatgpt.com/g/g-mK8OVUUNY-interview-analyzer">Interview Analyzer</option>
+    <option value="https://chatgpt.com/g/g-47fgwcJj3-prep-me">Prep Me</option>
+    <option value="https://chatgpt.com/g/g-6785de19285081918478f514310756d5-bill-explainer">Bill Explainer</option>
+    <option value="https://chatgpt.com/g/g-67e43f1d653c8191ba132d8f2c2596d5-summary-suit">Summary Suit</option>
+    <option value="https://chatgpt.com/g/g-68124695e39c8191b3d76a702a7b08e9-shopping-assistant">Shopping Assistant</option>
+    <option value="https://chatgpt.com/g/g-67fd4e1572d08191b5daab83e78e1255-quick-quizzer">Quick Quizzer</option>
+    <option value="https://chatgpt.com/g/g-67fb7893e8c88191ab961e7a76d68928-brain-snack-bar">Brain Snack Bar</option>
+    <option value="https://chatgpt.com/g/g-67d6f5a4f77c819199b8c34d3bcec024-fourth-grade-math-tutor">Fourth Grade Math Tutor</option>
+    <option value="https://chatgpt.com/gpts/editor/g-6780150a241c8191be44bf1ac7d67665">Quantum Kid Guide</option>
+    <option value="https://chatgpt.com/g/g-6750d272af4c8191ace9294460026f8e-ease-legalese">Ease Legalese</option>
+    <option value="https://chatgpt.com/gpts/editor/g-674e747851b88191aef01df8d058d952">MyMoney Mentor</option>
+    <option value="https://chatgpt.com/g/g-pQTOayOrZ-dreamer">Dreamer</option>
+    <option value="https://chatgpt.com/g/g-UOSsNsS10-eduguide">EduGuide</option>
+    <option value="https://chatgpt.com/g/g-ac8fkSk7r-build-a-brand">Build A Brand</option>
+    <option value="https://chatgpt.com/g/g-XG6LjG4iG-numbers-buddy">Numbers Buddy</option>
+  </select>
+</section>
 
-    <section class="section">
-      <h2>📱 AI-Powered Apps</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>BuzzRemind</h3>
-          <p>Turns conversations into actionable reminders.</p>
-          <a href="https://buzzremind.vercel.app">Visit BuzzRemind</a>
-        </div>
-        <div class="card">
-          <h3>Wedding Photo Share</h3>
-          <p>Simple, private photo gallery for weddings and events.</p>
-          <a href="#">Try It</a>
-        </div>
-        <div class="card">
-          <h3>AI Business Ally Program</h3>
-          <p>Support system for nonprofits using AI to scale impact.</p>
-          <a href="https://saprea-business-ally.vercel.app">Join the Program</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>🎮 AI-Powered Games</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Brik the LEGO Misfit</h3>
-          <p>Short-form AI-comedy LEGO game and skit series.</p>
-          <a href="#">Watch Episodes</a>
-        </div>
-        <div class="card">
-          <h3>AIQ</h3>
-          <p>Quiz to test and improve your AI skills.</p>
-          <a href="https://aiq-score.vercel.app">Take the Quiz</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>🎓 Bootcamps & Courses</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>AI Genie Bootcamp</h3>
-          <p>Learn practical AI tools for work and life.</p>
-          <a href="https://ai-genie3.vercel.app">Start Bootcamp</a>
-        </div>
-        <div class="card">
-          <h3>Critical Thinking Mastery</h3>
-          <p>Train your judgment in the age of AI.</p>
-          <a href="#">Take Course</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    &copy; 2025 Your Name — Every project built with obsession, caffeine, and curiosity.
-  </footer>
 </body>
 </html>
 
